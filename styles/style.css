@@ -113,19 +113,6 @@
   animation-duration: 0.5s;
 }
 
-@keyframes left-right {
-
-  from {
-    margin-inline-start: -20px;
-  }
-
-  to {
-    margin-inline-start: -24px;
-  }
-
-}
-
-
 .theme-menu__button::after {
   content: '';
   position: absolute;
@@ -292,114 +279,6 @@
   background-color: var(--button-color);
   transition: box-shadow 0.3s ease;
   max-inline-size: 130px;
-}
-
-.like-icon .contour {
-  fill: var(--heart-contour);
-  transition: fill 0.1s;
-}
-
-.like-icon .sparks {
-  opacity: 0;
-}
-
-.heart .core {
-  fill: transparent;
-  transition: fill 0.3s;
-}
-
-.heart .main-body {
-  fill: transparent;
-  transition: fill 0.5s 0.05s;
-}
-
-.like-icon:hover .core {
-  fill: var(--heart-contour);
-  transition: fill 0.3s 0.03s; 
-}
-
-.like-icon:hover .main-body {
-  fill: var(--heart-contour);
-  transition: fill 0.5s 0.05s;
-}
-
-.like-icon:active .core {
-  fill: var(--heart-fill);
-  transition: fill 0.3s 0.03s; 
-}
-
-.like-icon:active .main-body {
-  fill: var(--heart-fill);
-  transition: fill 0.5s 0.05s;
-}
-
-.like-icon.is-liked .core {
-  fill: var(--heart-fill);
-  transition: fill 0.3s 0.03s; 
-}
-
-.like-icon.is-liked .main-body {
-  fill: var(--heart-fill);
-  transition: fill 0.3s 0.05s;
-}
-
-.like-icon.is-liked .contour {
-  fill: var(--heart-fill);
-  transition: fill 0.3s 0.06s;
-}
-
-.like-icon.is-liked:hover .core {
-  fill: var(--heart-fill);
-  transition: fill 0.3s 0.03s; 
-}
-
-.like-icon.is-liked:hover .main-body {
-  fill: var(--heart-fill);
-  transition: fill 0.3s 0.05s;
-}
-
-.like-icon.is-liked .heart {
-  transform-origin: center;
-  animation-name: heart-scale;
-  animation-delay: 0.1s;
-  animation-direction: alternate-reverse;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  animation-duration: 0.3s;
-}
-
-@keyframes heart-scale {
-
-  from {
-    transform: scale(1);
-  }
-
-  to {
-    transform: scale(1.5);
-  }
-
-}
-
-.like-icon.is-liked .sparks {
-  transform-origin: center;
-  animation-name: sparks-appear;
-  animation-delay: 0.3s;
-  animation-direction: alternate-reverse;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  animation-duration: 0.3s;
-}
-
-@keyframes sparks-appear {
-
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-  }
-
 }
 
 .button__text {
