@@ -14,20 +14,27 @@
 
 */
 
+@supports (font-variation-settings: normal) {
+
+  .page {
+      font-family: var(--content-font, 'Lucida Grande', sans-serif);
+  }
+
+} 
+
 .page {
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
   color: var(--accent-color);
-  font-family: var(--content-font, 'Lucida Grande', sans-serif);
   font-size: var(--main-fs);
   background-image: var(--bg-image);
   background-size: cover;
   block-size: 100%;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-variation-settings: 'wdth' var(--main-fw), 'wdth' var(--h3-fw);
+  font-variation-settings: 'wgth' var(--main-fw);
 }
 
 .header {
@@ -72,6 +79,7 @@
   display: flex;
   flex-direction: column;
   gap: 14px;
+  font-variation-settings: 'wgth' 400;
 }
 
 .theme-menu__button {
@@ -147,7 +155,6 @@
   display: grid;
   gap: 50px;
   margin-block-start: 100px;
-  font-weight: var(--main-fw);
   background-color: var(--bg-color);
 }
 
@@ -159,8 +166,8 @@
   padding-inline-start: 10px;
   padding-block-start: 5px;
   padding-block-end: 5px;
-  font-weight: var(--h3-fw);
   font-size: var(--main-fs);
+  font-weight: var(--h3-fw);
 }
 
 .card-paragraph {
