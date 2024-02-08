@@ -5,15 +5,15 @@
   --accent-color: #000;
   --button-color: #fff;
   --main-fw: 400;
-  --h3-fw: 700;
+  --h2-fw: 700;
   --main-fs: 18px;
   --header-font: 'Press Start 2P';
   --content-font: 'Inter-Variable';
   --heart-contour: #000;
   --heart-fill: #f00;
   --bg-color: #fff;
-  --h1-fs: clamp(4.0625rem, 4.0625rem + 0vw, 4.0625rem);;
-  --h2-fs: clamp(1.4375rem, 1.4375rem + 0vw, 1.4375rem);;
+  --h1-fs: clamp(4.0625rem, 4.0625rem + 0vw, 4.0625rem);
+  --h2-fs: clamp(1.4375rem, 1.4375rem + 0vw, 1.4375rem);
   --theme-menu-fs: 14px;
   --bg-image: 
     repeating-linear-gradient(to right, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
@@ -25,7 +25,7 @@
 
   :root {
     --h1-fs: clamp(3.0625rem, 3.0625rem + 0vw, 3.0625rem);
-    --h2-fs: clamp(0.875rem, 0.875rem + 0vw, 0.875rem);;
+    --h2-fs: clamp(0.875rem, 0.875rem + 0vw, 0.875rem);
   }
 
 }
