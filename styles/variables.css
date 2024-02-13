@@ -12,8 +12,9 @@
   --heart-contour: #000;
   --heart-fill: #f00;
   --bg-color: #fff;
-  --h1-fs: clamp(4.0625rem, 4.0625rem + 0vw, 4.0625rem);
-  --h2-fs: clamp(1.4375rem, 1.4375rem + 0vw, 1.4375rem);
+  --wdth-content: clamp(23.5rem, 16.4323rem + 30.0752vw, 43.5rem);
+  --h1-fs: clamp(3.0625rem, 2.7768rem + 1.4286vw, 4.0625rem);
+  --h2-fs: clamp(0.875rem, 0.7143rem + 0.8036vw, 1.4375rem);
   --theme-menu-fs: 14px;
   --bg-image: 
     repeating-linear-gradient(to right, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
@@ -24,7 +25,7 @@
 @media (width <= 375px) {
 
   :root {
-    --h1-fs: clamp(3.0625rem, 3.0625rem + 0vw, 3.0625rem);
+    --h1-fs: clamp(2.4375rem, -1.1989rem + 18.1818vw, 3.0625rem);
     --h2-fs: clamp(0.875rem, 0.875rem + 0vw, 0.875rem);
   }
 

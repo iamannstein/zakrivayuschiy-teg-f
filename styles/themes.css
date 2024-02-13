@@ -26,6 +26,15 @@
     linear-gradient(#e7e7e7, #1a1a1a);
 }
 
+@media (width <= 375px) {
+
+  :root.theme-light {
+    --h1-fs: clamp(2.4375rem, -1.1989rem + 18.1818vw, 3.0625rem);
+    --h2-fs: clamp(0.875rem, 0.875rem + 0vw, 0.875rem);
+  }
+
+}
+
 .theme-light .button__text {
   color: var(--button-color);
 }

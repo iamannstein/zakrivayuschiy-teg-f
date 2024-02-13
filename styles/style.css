@@ -49,8 +49,7 @@
 }
 
 .wdth {
-  inline-size: 696px;
-  max-inline-size: 100%;
+  inline-size: var(--wdth-content);
 }
 
 .header__content-title {
@@ -179,7 +178,7 @@
 .card-image {
   border-top: 2px solid currentColor;
   border-bottom: 2px solid currentColor;
-  inline-size: 692px;
+  inline-size: 100%;
   block-size: 700px;
   object-fit: cover;
 }
@@ -354,6 +353,7 @@ dialog svg {
 .footer .button__text {
   padding: 0;
   white-space: nowrap;
+  outline: none;
 }
 
 .footer__save-button::before {
@@ -417,12 +417,8 @@ dialog svg {
  
 @media (width <= 375px) {
 
-  .page {
-    max-inline-size: 375px;
-  }
-
   .wdth {
-    inline-size: 100%;
+    inline-size: 100vw;
   }
 
   .header__content-title {
@@ -436,7 +432,6 @@ dialog svg {
 
   .card-image {
     block-size: 375px;
-    inline-size: 371px;
   }
 
   .footer {
@@ -454,16 +449,5 @@ dialog svg {
     max-inline-size: 306px;
   }
 
-  .footer .button__text {
-    outline: none;
-  }
-
 } 
 
-@media (width < 1440px) {
-
-  .wdth {
-    max-inline-size: 100%;
-  }
-
-}
